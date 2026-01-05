@@ -23,14 +23,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.png" type="image/png" />
       </head>
 
-          {/* Google Analytics */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-QC44RBPR53" strategy="afterInteractive" />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-QC44RBPR53');`}
-        </Script>
+   
 
 
       
