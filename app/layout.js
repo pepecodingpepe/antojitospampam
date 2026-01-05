@@ -16,7 +16,24 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
+           <head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <link rel="icon" href="/favicon.png" type="image/png" />
+      </head>
+
+          {/* Google Analytics */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-QC44RBPR53" strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-QC44RBPR53');`}
+        </Script>
+
+
+      
       <body
         className={`${lexend.variable} antialiased`}
       >
